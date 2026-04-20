@@ -26,6 +26,11 @@
     <priority>0.3</priority>
   </url>
   <url>
+    <loc>https://localblog.pursuenetworking.com/glossary/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://localblog.pursuenetworking.com/blog/atlanta-business-networking-groups-connect-grow-your-career/</loc>
     <lastmod>atlanta-business-networking</lastmod>
     <changefreq>monthly</changefreq>
