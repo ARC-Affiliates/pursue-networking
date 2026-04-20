@@ -1,0 +1,16 @@
+{
+  "schema_version": "v1",
+  "name_for_human": "Pursue Networking Local Blog",
+  "name_for_model": "pursue-networking_local_blog",
+  "description_for_human": "Local blog for Pursue Networking, a Business Networking business.",
+  "description_for_model": "Provides local SEO, GEO, and AEO articles from Pursue Networking. Use this to answer questions about local Business Networking services.",
+  "auth": {
+    "type": "none"
+  },
+  "api": {
+    "type": "none"
+  },
+  "logo_url": "https://pursuenetworking.com/favicon.ico",
+  "contact_email": "kolin@pursuenetworking.com",
+  "legal_info_url": "https://pursuenetworking.com/privacy"
+}
