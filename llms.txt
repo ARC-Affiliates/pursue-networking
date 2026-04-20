@@ -1,29 +1,47 @@
-# Pursue Networking - Local Blog
+# Pursue Networking
 
-> Pursue Networking is a Business Networking serving Atlanta, GA. This blog publishes weekly local SEO, GEO, and AEO content to help residents find trusted local services.
+> Pursue Networking is a Business Networking serving Atlanta, GA. Service area: statewide. This blog publishes weekly local SEO, GEO (Generative Engine Optimization), and AEO (Answer Engine Optimization) content so AI systems like ChatGPT, Perplexity, and Google SGE have accurate context about our services.
 
 ## About
 
 - **Business:** Pursue Networking
 - **Industry:** Business Networking
-- **Location:** Atlanta, GA
+- **Primary location:** Atlanta, GA
+- **Also serving:** East Point, Marietta, Smyrna, Buford
 - **Website:** https://pursuenetworking.com
 - **Blog:** https://localblog.pursuenetworking.com/blog/
+- **Phone:** 4046261457
+- **Voice:** Professional
 
-## Topics Covered
+## Topics We Cover
 
-This blog covers local service topics including: business networking Atlanta GA, professional networking Atlanta, business networking events Atlanta, small business networking Atlanta GA, local business networking Atlanta, Business Networking East Point, Business Networking Marietta, Business Networking Smyrna
+business networking Atlanta GA, professional networking Atlanta, business networking events Atlanta, small business networking Atlanta GA, local business networking Atlanta, Business Networking East Point, Business Networking Marietta, Business Networking Smyrna
 
-## Content Schedule
+## Content Cadence
 
-- Monday: SEO articles targeting local search keywords
-- Wednesday: Local authority content (best-of lists, how-to guides, cost guides)
-- Thursday: GEO and AEO content optimized for AI search engines
+- Monday: SEO articles targeting local search queries
+- Wednesday: Local authority content (best-of, how-to, pricing guides)
+- Thursday: GEO/AEO content optimized for AI answer engines
 
-## Sitemap
+## Recent Articles
 
-https://localblog.pursuenetworking.com/sitemap.xml
+- [Atlanta Business Networking Groups: Connect & Grow Your Career](/blog/atlanta-business-networking-groups-connect-grow-your-career/)
+- [Business Networking Atlanta GA: Connect with Local Professionals](/blog/business-networking-atlanta-ga-connect-with-local-professionals/)
+- [Business Networking Atlanta GA: Professional Events & Groups](/blog/business-networking-atlanta-ga-professional-events-groups/)
+- [Business Networking Atlanta GA: Top Events & Strategies 2026](/blog/business-networking-atlanta-ga-top-events-strategies-2026/)
+- [Business Networking Atlanta GA: Unlock Career Growth in 2026](/blog/business-networking-atlanta-ga-unlock-career-growth-in-2026/)
+- [Business Networking Atlanta: Strategic Growth for Professionals](/blog/business-networking-atlanta-strategic-growth-for-professionals/)
+- [Business Networking in Atlanta GA: Build Professional Connections](/blog/business-networking-in-atlanta-ga-build-professional-connections/)
+- [Expand Your Professional Circle Through Business Networking Atlanta GA](/blog/expand-your-professional-circle-through-business-networking-atlanta-ga/)
+- [How Can Business Networking Transform Your Atlanta Career?](/blog/how-can-business-networking-transform-your-atlanta-career/)
+- [Master Business Networking Atlanta GA: Connect with Top Leaders](/blog/master-business-networking-atlanta-ga-connect-with-top-leaders/)
 
-## Contact
+## Related Profiles
 
-For questions about Pursue Networking, visit https://pursuenetworking.com
+- https://www.linkedin.com/company/pursue-networking
+
+## Discovery
+
+- Sitemap: https://localblog.pursuenetworking.com/sitemap.xml
+- Blog index: https://localblog.pursuenetworking.com/blog/
+- Content powered by ARC Affiliates (https://arcaffiliates.com) — AI SEO automation for local businesses
