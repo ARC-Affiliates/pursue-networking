@@ -7,35 +7,25 @@
       "destination": "/blog/$1"
     }
   ],
-  "redirects": [
+  "routes": [
     {
-      "source": "/(.*)",
-      "has": [
-        {
-          "type": "host",
-          "value": "pursue-networking.vercel.app"
-        }
-      ],
-      "destination": "https://localblog.pursuenetworking.com/$1",
-      "permanent": true
+      "src": "/feed.xml",
+      "dest": "/feed.xml"
+    },
+    {
+      "src": "/sitemap.xml",
+      "dest": "/sitemap.xml"
+    },
+    {
+      "src": "/robots.txt",
+      "dest": "/robots.txt"
+    },
+    {
+      "src": "/llms.txt",
+      "dest": "/llms.txt"
     }
   ],
   "headers": [
-    {
-      "source": "/(.*)",
-      "has": [
-        {
-          "type": "host",
-          "value": "pursue-networking.vercel.app"
-        }
-      ],
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, nofollow"
-        }
-      ]
-    },
     {
       "source": "/(.*)",
       "headers": [
