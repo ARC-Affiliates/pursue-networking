@@ -6,6 +6,11 @@
     <priority>1.0</priority>
   </url>
   <url>
+    <loc>https://localblog.pursuenetworking.com/faq/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
     <loc>https://localblog.pursuenetworking.com/blog/atlanta-business-networking-groups-connect-grow-your-career/</loc>
     <lastmod>atlanta-business-networking</lastmod>
     <changefreq>monthly</changefreq>
