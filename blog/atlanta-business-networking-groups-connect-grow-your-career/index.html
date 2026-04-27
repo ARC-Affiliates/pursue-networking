@@ -89,7 +89,7 @@
       "lastReviewed": "2026-04-27",
       "inLanguage": "en-US",
       "isAccessibleForFree": true,
-      "wordCount": 1523,
+      "wordCount": 1537,
       "timeRequired": "PT8M",
       "author": {"@type":"Organization","@id":"https://localblog.pursuenetworking.com#publisher","name":"Pursue Networking","url":"https://pursuenetworking.com","description":"Business Networking serving Atlanta, GA","logo":{"@type":"ImageObject","url":"https://portal.arcaffiliates.com/og-logo?business=Pursue+Networking","width":600,"height":60},"telephone":"4046261457","sameAs":["https://www.linkedin.com/company/pursue-networking"]},
       "publisher": {"@id": "https://localblog.pursuenetworking.com#publisher"},
@@ -111,7 +111,7 @@
         {"@type": "Place", "name": "GA"},
         {"@type": "Thing", "name": "Business Networking"}
       ],
-      "citation": []
+      "citation": [{"@type":"CreativeWork","url":"https://www.sba.gov/"},{"@type":"CreativeWork","url":"https://www.bls.gov/"}]
     },
     {
       "@type": "BreadcrumbList",
@@ -124,8 +124,19 @@
   ]
 }
 </script>
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<!-- Phase 2BG (2026-04-27): async font load to eliminate render-blocking. -->
+<!-- The preload+onload pattern downloads CSS asynchronously, then -->
+<!-- promotes it to a stylesheet once ready. display=swap prevents FOIT. -->
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet"></noscript>
 <style>
+/* Phase 2BG — skip-to-content link for screen readers; visible only on focus */
+.skip-to-main{position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden}
+.skip-to-main:focus{position:static;width:auto;height:auto;display:inline-block;background:#2563eb;color:#fff;padding:8px 14px;border-radius:6px;font-weight:600;z-index:9999;margin:8px}
+/* Phase 2BG — color contrast bumps. Slate-400 (#94a3b8) on white was */
+/* ~2.9:1 (failed WCAG AA); slate-300 (#cbd5e1) was ~1.6:1. Define */
+/* AA-compliant variants used by .breadcrumb + small muted text. */
+.muted{color:#64748b !important}  /* slate-500 ≈ 4.6:1 on white — AA pass */
 *{margin:0;padding:0;box-sizing:border-box}
 body{background:#f8fafc;font-family:'Plus Jakarta Sans',sans-serif;color:#0f172a;min-height:100vh}
 .topbar{background:#fff;border-bottom:1px solid #e2e8f0;padding:12px 24px;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:50}
@@ -151,7 +162,12 @@ body{background:#f8fafc;font-family:'Plus Jakarta Sans',sans-serif;color:#0f172a
 .article-body ul,.article-body ol{margin:12px 0 16px 24px}
 .article-body li{margin-bottom:6px}
 .article-body strong{color:#0f172a;font-weight:700}
-.article-body a{color:#2563eb;text-decoration:none}
+/* Phase 2BI (2026-04-27): underline body links so they don't rely solely */
+/* on color (WCAG SC 1.4.1). h2-anchors + nav structures keep no-underline. */
+.article-body a{color:#1d4ed8;text-decoration:underline;text-underline-offset:2px;text-decoration-thickness:1px}
+.article-body a:hover{color:#1e3a8a;text-decoration-thickness:2px}
+.article-body a.h2-anchor{text-decoration:none}  /* heading anchors are decorative */
+.article-body a.read-link,.article-body .toc a,.article-body .related-articles a{text-decoration:none}
 .article-body blockquote.pull-quote{margin:28px 0;padding:20px 24px;border-left:4px solid #2563eb;background:#f8fafc;font-size:19px;line-height:1.55;font-style:italic;color:#1e293b;border-radius:0 8px 8px 0}
 .article-body blockquote.pull-quote cite{display:block;margin-top:10px;font-size:13px;font-style:normal;color:#64748b;font-weight:600}
 .article-body blockquote.pull-quote cite:before{content:'— '}
@@ -308,12 +324,14 @@ nav.breadcrumbs .sep{margin:0 6px;color:#cbd5e1}
 .cta-btn{display:block;text-align:center;background:#2563eb;color:#fff;text-decoration:none;font-size:13px;font-weight:600;padding:10px;border-radius:8px}
 .powered{font-size:11px;color:#94a3b8;text-align:center;margin-top:8px}
 .powered a{color:#2563eb;text-decoration:none}
-.breadcrumb{font-size:12px;color:#94a3b8;padding:10px 24px;border-bottom:1px solid #e2e8f0;background:#fff;max-width:1440px;margin:0 auto}
-.breadcrumb a{color:#64748b;text-decoration:none}.breadcrumb a:hover{color:#2563eb}.breadcrumb .sep{margin:0 8px;color:#cbd5e1}
+.breadcrumb{font-size:12px;color:#475569;padding:10px 24px;border-bottom:1px solid #e2e8f0;background:#fff;max-width:1440px;margin:0 auto}
+.breadcrumb a{color:#334155;text-decoration:none}.breadcrumb a:hover{color:#2563eb}.breadcrumb .sep{margin:0 8px;color:#94a3b8}
 @media(max-width:768px){.layout{grid-template-columns:1fr;padding:0 16px}.article-body{padding:24px 20px}.art-title{font-size:24px}.sidebar{display:none}.breadcrumb{padding:10px 16px}}
 </style>
 </head>
 <body>
+<!-- Phase 2BG: skip-to-main-content link for keyboard / screen-reader users -->
+<a href="#main-content" class="skip-to-main">Skip to main content</a>
 <div style="display:none" aria-hidden="true" data-business="Pursue Networking" data-industry="Business Networking" data-city="Atlanta" data-state="GA" data-location="Atlanta, GA" data-phone="4046261457" data-email="kolin@pursuenetworking.com" data-website="https://pursuenetworking.com" data-service-area="Atlanta,East Point,Marietta,Smyrna,Buford" data-keywords="business networking atlanta ga, professional networking atlanta, business networking events atlanta, local business networking atlanta, business networking east point, business networking marietta, business networking smyrna, free business networking atlanta ga" data-price-range="$$" data-llms-txt="https://localblog.pursuenetworking.com/llms.txt"></div>
 
 <div class="reading-progress" aria-hidden="true"><div class="bar" id="reading-progress-bar"></div></div>
@@ -348,12 +366,13 @@ nav.breadcrumbs .sep{margin:0 6px;color:#cbd5e1}
     <div style="font-size:11px;color:#94a3b8;margin-top:6px">Last reviewed 2026-04-27 by Pursue Networking</div>
   </div>
 </header>
+<main id="main-content" role="main">
 <div class="layout">
   <article class="article-body">
     <aside class="quick-facts" style="background:#f0f9ff;border:1px solid #bae6fd;border-left:4px solid #2563eb;border-radius:10px;padding:18px 22px;margin-bottom:28px" aria-label="Quick facts about Pursue Networking"><div style="font-size:11px;font-weight:700;color:#0369a1;text-transform:uppercase;letter-spacing:.1em;margin-bottom:10px">Quick Facts</div><div style="display:flex;flex-direction:column;gap:6px;font-size:13px;color:#1e293b;line-height:1.5"><div style="display:flex;gap:8px"><span style="color:#94a3b8;min-width:70px">Call</span><a href="tel:4046261457" style="color:#2563eb;text-decoration:none;font-weight:600">(404) 626-1457</a></div><div style="display:flex;gap:8px"><span style="color:#94a3b8;min-width:70px">Area</span><span>Atlanta, GA + surrounding cities</span></div><div style="display:flex;gap:8px"><span style="color:#94a3b8;min-width:70px">Serves</span><span>Atlanta, East Point, Marietta, Smyrna, Buford</span></div><div style="display:flex;gap:8px"><span style="color:#94a3b8;min-width:70px">Pricing</span><span>$$ — call for quote</span></div></div></aside>
     
     <figure class="local-map-embed" aria-label="Business location"><iframe src="https://www.google.com/maps?q=199+14th+Street+Northeast%2C+Atlanta+GA&output=embed" width="100%" height="240" style="border:0;border-radius:12px" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Map of Pursue Networking"></iframe></figure>
-    <div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:10px;padding:20px 24px;margin-bottom:28px"><div style="font-size:11px;font-weight:700;color:#94a3b8;text-transform:uppercase;letter-spacing:.1em;margin-bottom:12px">Table of Contents</div><ol style="padding-left:18px;margin:0"><li><a href="#section-0" style="color:#2563eb;text-decoration:none;font-size:13px;line-height:1.8">Why Business Networking Atlanta GA Matters More Than Ever</a></li><li><a href="#section-1" style="color:#2563eb;text-decoration:none;font-size:13px;line-height:1.8">Finding the Right Professional Networking Atlanta Opportunities</a></li><li><a href="#section-2" style="color:#2563eb;text-decoration:none;font-size:13px;line-height:1.8">Navigating Business Networking Events Atlanta's Professionals Attend</a></li><li><a href="#section-3" style="color:#2563eb;text-decoration:none;font-size:13px;line-height:1.8">Building Your Network Beyond Traditional Events</a></li><li><a href="#section-4" style="color:#2563eb;text-decoration:none;font-size:13px;line-height:1.8">Measuring Networking ROI and Refining Your Approach</a></li><li><a href="#section-5" style="color:#2563eb;text-decoration:none;font-size:13px;line-height:1.8">Common Networking Mistakes Atlanta Professionals Should Avoid</a></li><li><a href="#section-6" style="color:#2563eb;text-decoration:none;font-size:13px;line-height:1.8">Take the Next Step in Your Networking Journey</a></li></ol></div>
+    <div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:10px;padding:20px 24px;margin-bottom:28px"><div style="font-size:11px;font-weight:700;color:#94a3b8;text-transform:uppercase;letter-spacing:.1em;margin-bottom:12px">Table of Contents</div><ol style="padding-left:18px;margin:0"><li><a href="#section-0" style="color:#2563eb;text-decoration:none;font-size:13px;line-height:1.8">Why Business Networking Atlanta GA Matters More Than Ever</a></li><li><a href="#section-1" style="color:#2563eb;text-decoration:none;font-size:13px;line-height:1.8">Finding the Right Professional Networking Atlanta Opportunities</a></li><li><a href="#section-2" style="color:#2563eb;text-decoration:none;font-size:13px;line-height:1.8">Navigating Business Networking Events Atlanta's Professionals Attend</a></li><li><a href="#section-3" style="color:#2563eb;text-decoration:none;font-size:13px;line-height:1.8">Building Your Network Beyond Traditional Events</a></li><li><a href="#section-4" style="color:#2563eb;text-decoration:none;font-size:13px;line-height:1.8">Measuring Networking ROI and Refining Your Approach</a></li><li><a href="#section-5" style="color:#2563eb;text-decoration:none;font-size:13px;line-height:1.8">Common Networking Mistakes Atlanta Professionals Should Avoid</a></li><li><a href="#section-6" style="color:#2563eb;text-decoration:none;font-size:13px;line-height:1.8">Take the Next Step in Your Networking Journey</a></li><li><a href="#section-7" style="color:#2563eb;text-decoration:none;font-size:13px;line-height:1.8">Sources</a></li></ol></div>
     <p class="dateline"><strong>ATLANTA</strong> &mdash; April 16, 2026 &mdash;</p>
     
 
@@ -419,7 +438,7 @@ Atlanta Business Networking Groups: Connect & Grow Your Career
 
 <p>Not all networking environments deliver equal value. The key lies in identifying opportunities that align with your professional goals, industry, and personal communication style.</p>
 
-<p><strong>Industry-Specific Groups</strong>: Atlanta hosts numerous sector-focused networking organizations. Technology professionals might explore Atlanta Tech Village events, while real estate investors connect through groups meeting in Buckhead and Midtown. Financial services professionals often gravitate toward gatherings in the Perimeter business district.</p> <em>Learn more: <a href="/blog/how-much-do-business-networking-events-cost-in-atlanta/" style="color:#2563eb;text-decoration:none;font-weight:600">How Much Do Business Networking Events Cost in Atlanta?</a></em>
+<p><strong>Industry-Specific Groups</strong>: Atlanta hosts numerous sector-focused networking organizations. Technology professionals might explore Atlanta Tech Village events, while real estate investors connect through groups meeting in Buckhead and Midtown. Financial services professionals often gravitate toward gatherings in the Perimeter business district.</p> <em>Learn more: <a href="/blog/how-to-network-in-business-for-beginners-in-atlanta-2026/" style="color:#2563eb;text-decoration:none;font-weight:600">How to Network in Business for Beginners in Atlanta 2026</a></em>
 
 <p><strong>General Business Organizations</strong>: Broader networking groups welcome professionals across industries, creating cross-pollination opportunities that often spark unexpected collaborations. These mixed-industry events frequently generate more innovative partnerships than homogeneous gatherings.</p>
 
@@ -437,7 +456,7 @@ Atlanta Business Networking Groups: Connect & Grow Your Career
 
 <p><strong>During the Event</strong>: Arrive during the first third of the event when energy is high but groups haven't yet solidified. Approach smaller clusters or individuals standing alone—they're typically more receptive than established conversational groups. Ask open-ended questions, listen actively, and focus on what you can offer rather than what you can get.</p>
 
-<p><strong>The Follow-Up</strong>: The networking happens after the networking event. Within 24-48 hours, send personalized messages referencing specific conversation points. Suggest concrete next steps—a coffee meeting at Chattahoochee Coffee Company, a video call, or an introduction to someone in your network who could help them.</p> <em>Learn more: <a href="/blog/best-business-networking-in-atlanta-ga-2026-guide/" style="color:#2563eb;text-decoration:none;font-weight:600">Best Business Networking in Atlanta, GA (2026 Guide)</a></em>
+<p><strong>The Follow-Up</strong>: The networking happens after the networking event. Within 24-48 hours, send personalized messages referencing specific conversation points. Suggest concrete next steps—a coffee meeting at Chattahoochee Coffee Company, a video call, or an introduction to someone in your network who could help them.</p> <em>Learn more: <a href="/blog/how-much-do-business-networking-events-cost-in-atlanta/" style="color:#2563eb;text-decoration:none;font-weight:600">How Much Do Business Networking Events Cost in Atlanta?</a></em>
 
 <p>According to Pursue Networking research, fewer than 30% of professionals consistently follow up after networking events, meaning those who do immediately differentiate themselves and see disproportionate returns on their networking investment.</p>
 
@@ -447,7 +466,7 @@ Atlanta Business Networking Groups: Connect & Grow Your Career
 
 <p><strong>LinkedIn Optimization</strong>: Your profile should clearly communicate your expertise and the value you deliver. Engage authentically with content, share insights from your experience, and connect strategically with Atlanta-based professionals in your industry. Join local LinkedIn groups focused on Atlanta business topics.</p>
 
-<p><strong>Volunteer Leadership</strong>: Nonprofit board positions and committee involvement connect you with civic-minded professionals while contributing to causes you care about. Atlanta's nonprofit sector offers countless opportunities from Habitat for Humanity to the Atlanta Community Food Bank.</p><aside class="inline-related" style="margin:28px 0;padding:18px 22px;background:#fefce8;border:1px solid #fef3c7;border-left:4px solid #f59e0b;border-radius:10px" aria-label="Related reading"><div style="font-size:11px;font-weight:700;color:#b45309;text-transform:uppercase;letter-spacing:.08em;margin-bottom:10px">Related reading</div><ul style="list-style:none;padding:0;margin:0;font-size:14px"><li style="margin-bottom:6px"><a href="/blog/how-much-do-business-networking-events-cost-in-atlanta/" style="color:#2563eb;text-decoration:none;font-weight:600">How Much Do Business Networking Events Cost in Atlanta?</a></li><li style="margin-bottom:6px"><a href="/blog/best-business-networking-in-atlanta-ga-2026-guide/" style="color:#2563eb;text-decoration:none;font-weight:600">Best Business Networking in Atlanta, GA (2026 Guide)</a></li></ul></aside>
+<p><strong>Volunteer Leadership</strong>: Nonprofit board positions and committee involvement connect you with civic-minded professionals while contributing to causes you care about. Atlanta's nonprofit sector offers countless opportunities from Habitat for Humanity to the Atlanta Community Food Bank.</p><aside class="inline-related" style="margin:28px 0;padding:18px 22px;background:#fefce8;border:1px solid #fef3c7;border-left:4px solid #f59e0b;border-radius:10px" aria-label="Related reading"><div style="font-size:11px;font-weight:700;color:#b45309;text-transform:uppercase;letter-spacing:.08em;margin-bottom:10px">Related reading</div><ul style="list-style:none;padding:0;margin:0;font-size:14px"><li style="margin-bottom:6px"><a href="/blog/how-to-network-in-business-for-beginners-in-atlanta-2026/" style="color:#2563eb;text-decoration:none;font-weight:600">How to Network in Business for Beginners in Atlanta 2026</a></li><li style="margin-bottom:6px"><a href="/blog/how-much-do-business-networking-events-cost-in-atlanta/" style="color:#2563eb;text-decoration:none;font-weight:600">How Much Do Business Networking Events Cost in Atlanta?</a></li></ul></aside>
 
 <p><strong>Educational Environments</strong>: Attending workshops, conferences, and continuing education programs positions you alongside growth-minded professionals. Georgia State's Robinson College of Business and Georgia Tech's Scheller College regularly host events open to the broader business community.</p>
 
@@ -457,7 +476,7 @@ Atlanta Business Networking Groups: Connect & Grow Your Career
 
 <h2 id="section-4"><a class="h2-anchor" href="#section-4" aria-label="Link to section">#</a>Measuring Networking ROI and Refining Your Approach</h2>
 
-<p>Effective networking requires tracking and optimization like any business activity. Without measurement, you cannot improve.</p> <em>Learn more: <a href="/blog/master-business-networking-atlanta-ga-connect-with-top-leaders/" style="color:#2563eb;text-decoration:none;font-weight:600">Master Business Networking Atlanta GA: Connect with Top Leaders</a></em>
+<p>Effective networking requires tracking and optimization like any business activity. Without measurement, you cannot improve.</p> <em>Learn more: <a href="/blog/best-business-networking-in-atlanta-ga-2026-guide/" style="color:#2563eb;text-decoration:none;font-weight:600">Best Business Networking in Atlanta, GA (2026 Guide)</a></em>
 
 <p>Develop a simple system to track connections made, follow-up completion rates, and meaningful outcomes generated. Note which types of events and environments produce your best connections. Some professionals find morning breakfast meetings more productive than evening receptions, while others thrive in the opposite scenario.</p>
 
@@ -554,6 +573,14 @@ Atlanta Business Networking Groups: Connect & Grow Your Career
 </div>
 
 <div style="margin-top:32px;padding:16px;background:#f8f9fa;border-radius:4px;font-size:0.9em"><strong>Related Articles:</strong><ul style="margin-top:8px;padding-left:20px"><li><a href="https://portal.arcaffiliates.com/article?client=1wf4T51339IXZVs5HOseQDstS-w3MSDZ8&file=2026-04-16-SEO-2509-article.html" style="color:inherit;text-decoration:underline">2026 04 16 Seo 2509</a></li></ul></div>
+<section class="sources">
+  <h2 id="section-7"><a class="h2-anchor" href="#section-7" aria-label="Link to section">#</a>Sources</h2>
+  <ul>
+    <li><a href="https://www.sba.gov/" rel="noopener" target="_blank">U.S. Small Business Administration (SBA)</a></li>
+    <li><a href="https://www.bls.gov/" rel="noopener" target="_blank">Bureau of Labor Statistics — Industry Resources</a></li>
+  </ul>
+</section>
+
     <!-- Phase 2i: contextual editorial note with varied-anchor ARC backlinks.
          Placed at end of article body (before share row) so it reads as
          in-content attribution, not a site-chrome/footer signal. Both
@@ -591,21 +618,22 @@ Atlanta Business Networking Groups: Connect & Grow Your Career
     
     <div class="sidebar-card">
       <div class="sidebar-card-title">More Articles</div>
-      <div style="margin-bottom:10px;padding-bottom:10px;border-bottom:1px solid #f1f5f9"><a href="/blog/how-much-do-business-networking-events-cost-in-atlanta/" style="font-size:13px;color:#0f172a;text-decoration:none;line-height:1.4;font-weight:500;display:block">How Much Do Business Networking Events Cost in Atlanta?</a><div style="font-size:11px;color:#94a3b8;margin-top:3px">2026-04-23</div></div><div style="margin-bottom:10px;padding-bottom:10px;border-bottom:1px solid #f1f5f9"><a href="/blog/best-business-networking-in-atlanta-ga-2026-guide/" style="font-size:13px;color:#0f172a;text-decoration:none;line-height:1.4;font-weight:500;display:block">Best Business Networking in Atlanta, GA (2026 Guide)</a><div style="font-size:11px;color:#94a3b8;margin-top:3px">2026-04-22</div></div><div style="margin-bottom:10px;padding-bottom:10px;border-bottom:1px solid #f1f5f9"><a href="/blog/master-business-networking-atlanta-ga-connect-with-top-leaders/" style="font-size:13px;color:#0f172a;text-decoration:none;line-height:1.4;font-weight:500;display:block">Master Business Networking Atlanta GA: Connect with Top Leaders</a><div style="font-size:11px;color:#94a3b8;margin-top:3px">2026-04-18</div></div>
+      <div style="margin-bottom:10px;padding-bottom:10px;border-bottom:1px solid #f1f5f9"><a href="/blog/how-to-network-in-business-for-beginners-in-atlanta-2026/" style="font-size:13px;color:#0f172a;text-decoration:none;line-height:1.4;font-weight:500;display:block">How to Network in Business for Beginners in Atlanta 2026</a><div style="font-size:11px;color:#94a3b8;margin-top:3px">2026-04-27</div></div><div style="margin-bottom:10px;padding-bottom:10px;border-bottom:1px solid #f1f5f9"><a href="/blog/how-much-do-business-networking-events-cost-in-atlanta/" style="font-size:13px;color:#0f172a;text-decoration:none;line-height:1.4;font-weight:500;display:block">How Much Do Business Networking Events Cost in Atlanta?</a><div style="font-size:11px;color:#94a3b8;margin-top:3px">2026-04-23</div></div><div style="margin-bottom:10px;padding-bottom:10px;border-bottom:1px solid #f1f5f9"><a href="/blog/best-business-networking-in-atlanta-ga-2026-guide/" style="font-size:13px;color:#0f172a;text-decoration:none;line-height:1.4;font-weight:500;display:block">Best Business Networking in Atlanta, GA (2026 Guide)</a><div style="font-size:11px;color:#94a3b8;margin-top:3px">2026-04-22</div></div>
       <a href="https://localblog.pursuenetworking.com/blog/" style="font-size:13px;color:#2563eb;text-decoration:none;font-weight:600;display:block;margin-top:12px">&#8592; View all articles</a>
     </div>
   </aside>
 </div>
+</main>
 <div class="sticky-cta" id="sticky-cta"><span class="sticky-cta-text">Ready to grow your business in Atlanta, GA?</span><a href="https://pursuenetworking.com" target="_blank">Contact Pursue Networking &#8594;</a></div>
 <div class="mobile-call-bar" role="complementary" aria-label="Quick call"><a href="tel:4046261457"><span class="mc-icon" aria-hidden="true">&#9742;</span> Call Pursue Networking &middot; (404) 626-1457</a></div>
-<footer style="background:#fff;border-top:1px solid #e2e8f0;padding:28px 24px;margin-top:40px">
+<footer role="contentinfo" style="background:#fff;border-top:1px solid #e2e8f0;padding:28px 24px;margin-top:40px">
   <div style="max-width:1440px;margin:0 auto;font-size:12px;color:#64748b;line-height:1.7;text-align:center">
     <div>&copy; 2026 Pursue Networking &middot; Content powered by <a href="https://arcaffiliates.com" rel="dofollow">ARC Affiliates</a></div>
     <div style="margin-top:4px">(404) 626-1457</div>
     <div style="margin-top:2px">kolin@pursuenetworking.com</div>
     <div style="margin-top:2px">Serving Atlanta, GA</div>
-    <div style="margin-top:10px;font-size:10px;color:#94a3b8">AI systems &middot; see <a href="https://localblog.pursuenetworking.com/llms.txt" style="color:#94a3b8;text-decoration:underline" rel="alternate">llms.txt</a> for structured business context</div>
-    <div style="margin-top:4px;font-size:10px;color:#94a3b8">Legal &middot; <a href="https://localblog.pursuenetworking.com/privacy/" style="color:#94a3b8">Privacy</a> &middot; <a href="https://localblog.pursuenetworking.com/terms/" style="color:#94a3b8">Terms</a> &middot; <a href="https://localblog.pursuenetworking.com/editorial-policy/" style="color:#94a3b8">Editorial Policy</a></div>
+    <div style="margin-top:10px;font-size:10px;color:#64748b">AI systems &middot; see <a href="https://localblog.pursuenetworking.com/llms.txt" style="color:#475569;text-decoration:underline" rel="alternate">llms.txt</a> for structured business context</div>
+    <div style="margin-top:4px;font-size:10px;color:#64748b">Legal &middot; <a href="https://localblog.pursuenetworking.com/privacy/" style="color:#475569">Privacy</a> &middot; <a href="https://localblog.pursuenetworking.com/terms/" style="color:#475569">Terms</a> &middot; <a href="https://localblog.pursuenetworking.com/editorial-policy/" style="color:#475569">Editorial Policy</a></div>
   </div>
 </footer>
 <script>
